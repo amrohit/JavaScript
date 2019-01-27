@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Edit Note</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.2.1/css/bootstrap.min.css" />
+    <style>
+        body {
+            padding: 5px;
+        }
+        input, select,textarea {
+            width: 50% !important;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="form-group">
+        <a href="/">Home</a>
+        <hr>
+        <input type="text" class="form-control" id="note-title" placeholder="Note title">
+        <textarea id="note-body" class="form-control" rows="5"></textarea>
+        <button class="btn btn-danger" id="remove-note">Remove</button>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.23.0/moment-with-locales.min.js"></script>
+    <script src="./notes-functions.js"></script>
+    <script src="./notes-edit.js"></script>
+</body>
+
+</html>
